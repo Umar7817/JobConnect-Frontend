@@ -155,3 +155,101 @@ li {
 .create-job-input{
   @apply block w-full flex-1 bg-white py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6
 }
+
+/* Login  */
+
+.login-container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #9fbaff; */
+}
+
+.img-div {
+  width: 50vw;
+  overflow: hidden;
+}
+
+.form-div {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+
+.form-bx {
+  background-color: white;
+  height: 48vh;
+  width: 22vw;
+  border-radius: 20px;
+  box-shadow: -1px 4px 40px 1px rgba(123, 145, 255, 0.75);
+  -webkit-box-shadow: -1px 4px 40px 1px rgba(123, 145, 255, 0.75);
+  -moz-box-shadow: -1px 4px 40px 1px rgba(123, 145, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.form-bx-register {
+    background-color: white;
+    height: 55vh;
+    width: 22vw;
+    border-radius: 20px;
+    box-shadow: -1px 4px 40px 1px rgba(123, 145, 255, 0.75);
+    -webkit-box-shadow: -1px 4px 40px 1px rgba(123, 145, 255, 0.75);
+    -moz-box-shadow: -1px 4px 40px 1px rgba(123, 145, 255, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.form-bx h2 {
+  text-align: center;
+  color: #6360fa;
+ 
+
+}
+
+.form-bx form {
+    margin-left: 1.8vw;
+}
+
+.form-bx form input {
+    width: 90%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: rgb(219, 219, 219);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    
+}
+
+.form-bx form input::placeholder{
+    color: black;
+    
+}
+
+.form-bx form button {
+    width: 90%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #6360fa;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+
+}
+
+.form-bx form p {
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.Link-item {
+    text-decoration: none;
+}

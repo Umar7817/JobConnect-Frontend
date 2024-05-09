@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaXmark } from "react-icons/fa6";
+import ContextApi from "./ContextApi";
 
 function Navbar() {
+
+    const {user} = useContext(ContextApi)
 
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -12,12 +15,12 @@ function Navbar() {
     }
   const navItems = [
     {
-      path: "/",
+      path: "/dashbord",
       title: "Start a search",
     },
     {
-      path: "salary",
-      title: "Salary",
+      path: "/update-profile",
+      title: "Update Profile",
     },
   ];
 
@@ -44,9 +47,8 @@ function Navbar() {
 
         {/* sign up and login button */}
         <div className="font-medium space-x-5 hidden lg:block">
-            <Link to={"/login"} className="py-2 px-5 border rounded">Login</Link>
-            <Link to={"/sign-up"} className="py-2 px-5 border rounded bg-blue-600 text-white">Sign up</Link>
-            
+           
+           <h3>Hi, User</h3>
         </div>
 
         <div className="md:hidden block"> 
@@ -72,7 +74,6 @@ function Navbar() {
             </li>
           ))}
         </ul>
-        <Link to={"/login"} className="text-white">Login</Link>
       </div>
     </header>
   );

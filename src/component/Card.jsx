@@ -4,12 +4,12 @@ import { FiDollarSign, FiMapPin } from 'react-icons/fi'
 import { FaIndianRupeeSign } from 'react-icons/fa6'
 
 function Card({data} ) {
-    const {companyName, jobTitle, componyLogo, minPrice, maxPrice, salaryType, jobLocation, description} = data
+    const {companyName, jobTitle, componyLogo, minPrice, maxPrice, salaryType, exprienceLevel, jobLocation, description, _id} = data
   return (
     <div>
 
         <section className='card'>
-        <Link to={"/"} className='flex gap-4 flex-col sm:flex-row items-start'>
+        <Link to={`/job-details/${jobTitle}/${companyName}/${maxPrice}/${minPrice}/${salaryType}/${exprienceLevel}/${description}/${_id}`} className='flex gap-4 flex-col sm:flex-row items-start'>
             <img className='h-24 w-24 aspect-auto' src={componyLogo} alt="" />
             <div>
                 <h4 className='text-black mb-1'>{companyName} </h4>
